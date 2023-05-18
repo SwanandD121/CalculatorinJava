@@ -8,7 +8,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         
         while(true) {
-            System.out.println("Enter Operation to b performed: ");
+            System.out.println("Select an operation (+, -, *, /, %): ");
             char operation = scanner.next().trim().charAt(0);
             if(operation == '+' || operation == '-' || operation == '*' || operation == '/' || operation == '%') {
                 System.out.println("Enter 2 numbers: ");
@@ -37,7 +37,7 @@ public class Calculator {
                 break;
             }
             else {
-                System.out.println("Invalid Input");
+                System.out.println("Invalid Input, Please enter a valid operation");
             }
             System.out.println(ans);
         }
